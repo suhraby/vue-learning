@@ -9,6 +9,10 @@
 			<button>Submit</button>
 		</form>
 
+		<button @clicked.right="writeToConsole"></button>
+		<button @clicked.left="writeToConsole"></button>
+		<button @clicked.middle="writeToConsole"></button>
+
 		<!-- the click event's propagation will be stopped -->
 		<a @click.stop="doThis"></a>
 
